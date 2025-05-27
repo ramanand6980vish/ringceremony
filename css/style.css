@@ -1,0 +1,207 @@
+ html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #fffaf5;
+      color: #3d2b1f;
+      padding-top: 70px; /* navbar height */
+    }
+
+    /* Navbar Brand */
+    .navbar-brand {
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #a84448 !important;
+    }
+
+    .navbar-logo-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-center-image {
+  height: 40px;
+}
+
+/* Optional: Adjust on smaller screens if needed */
+@media (max-width: 768px) {
+  .navbar-center-image {
+    height: 30px;
+  }
+}
+
+
+
+    /* Background blur effect */
+    .home::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('/assets/decorated.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(2px) brightness(0.85);
+      z-index: -1;
+    }
+
+    /* Invitation Section */
+    .invitation-section {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to bottom right, #fce8d5cc, #f5d0c5cc);
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 0 auto 60px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .invitation-section strong {
+      display: block;
+      margin: 15px 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+
+    .line1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #c08457;
+      animation-name: slideUp;
+      animation-duration: 0.7s;
+      animation-delay: 0.1s;
+    }
+
+    .line2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #855e42;
+      animation-name: slideUp;
+      animation-duration: 0.7s;
+      animation-delay: 0.3s;
+    }
+
+    .line3 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #a84448;
+      animation-name: slideUp;
+      animation-duration: 0.7s;
+      animation-delay: 0.5s;
+    }
+
+    .line4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: #6e4c1e;
+      animation-name: slideUp;
+      animation-duration: 0.7s;
+      animation-delay: 0.7s;
+    }
+
+    .line5,
+    .line6 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      color: #4e342e;
+      animation-name: slideUp;
+      animation-duration: 0.7s;
+    }
+
+    .line5 {
+      animation-delay: 0.9s;
+    }
+    .line6 {
+      animation-delay: 1.1s;
+    }
+
+    /* Slide Up Animation */
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Other sections styling */
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      color: #f02f35;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    #gall{
+        height: 200px;
+    }
+
+    /* Navbar active link color */
+    .nav-link.active {
+      color: #a84448 !important;
+      font-weight: 600;
+    }
+
+    /* video */
+    .video-wrapper {
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .invitation-section {
+        padding: 60px 15px;
+        margin-bottom: 40px;
+      }
+      .line1 {
+        font-size: 2rem;
+      }
+      .line2, .line3 {
+        font-size: 1.3rem;
+      }
+    }
+    @media (max-width: 576px) {
+    #gallery img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
+
+    
+  @media (max-width: 991.98px) {
+    .navbar .mx-auto {
+      display: block !important;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }

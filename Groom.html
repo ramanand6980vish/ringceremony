@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Groom Details - Prem Sagar</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #a84448 0%, #f0c6b4 100%);
+      color: #3d2b1f;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      margin: 0;
+    }
+
+    .container-box {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      max-width: 600px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 30px rgba(168, 68, 72, 0.5);
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      color: #a84448;
+      margin-bottom: 30px;
+      font-size: 2.8rem;
+    }
+
+    .family-info {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .family-info strong {
+      color: #6e4c1e;
+      font-weight: 700;
+    }
+
+    .address {
+      font-style: italic;
+      margin-top: 20px;
+      color: #4e342e;
+    }
+
+    .groom-image {
+      max-width: 180px;
+      border-radius: 50%;
+      border: 5px solid #a84448;
+      margin: 30px auto 20px;
+      display: block;
+      box-shadow: 0 8px 15px rgba(168, 68, 72, 0.7);
+      transition: transform 0.3s ease;
+    }
+
+    .groom-image:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-home {
+      margin-top: 30px;
+      background-color: #a84448;
+      border: none;
+      color: white;
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-home:hover {
+      background-color: #6e2f30;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .container-box {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .family-info {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-box">
+    <h1>Prem Sagar Vishwakarma - Groom</h1>
+    <img src="/assets/groomBest.jpg" alt="Groom Image" class="groom-image" />
+
+    <div class="family-info">
+      <p><strong>Father's Name:</strong> Mr. Nagendra Vishwakarma</p>
+      <p><strong>Mother's Name:</strong> Mrs. Anita Devi</p>
+      <p><strong>Grandfather's Name:</strong> Shree Chandradev Vishwakarma</p>
+      <p><strong>Grandmother's Name:</strong> Smt. Manmati Devi</p>
+    </div>
+
+    <p class="address">
+      Vill: Khardiha, Post: Adar, Pst: Bardiha, District: Garhwa
+    </p>
+
+    <a href="index.html#couple" class="btn-home">← Back to Couple</a>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
