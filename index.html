@@ -97,7 +97,7 @@
 <!-- Gallery Section -->
 <section id="gallery" class="gallery text-center">
   <h2>Memorable Moments</h2>
-  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="/assets/Left Slide.jpg" class="d-block w-100 img-fluid rounded" alt="Image 1">
@@ -109,7 +109,22 @@
         <img src="/assets/bride1.jpg" class="d-block w-100 img-fluid rounded" alt="Image 3">
       </div>
       <div class="carousel-item">
-        <img src="/assets/Right Slide.jpg" class="d-block w-100 img-fluid rounded" alt="Image 3">
+        <img src="/assets/Right Slide.jpg" class="d-block w-100 img-fluid rounded" alt="Image 4">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/pica.jpg" class="d-block w-100 img-fluid rounded" alt="Image 5">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/picb.jpg" class="d-block w-100 img-fluid rounded" alt="Image 6">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/picc.jpg" class="d-block w-100 img-fluid rounded" alt="Image 7">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/picd.jpg" class="d-block w-100 img-fluid rounded" alt="Image 8">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/picba.jpg" class="d-block w-100 img-fluid rounded" alt="Image 9">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
@@ -204,7 +219,7 @@
 
 <!-- Footer -->
 <footer>
-  <p>Made with ❤ for Prem Sagar & Rani Kumari | 2025</p>
+  <p>Made with ❤ for Prem & Rani | 2025</p>
   <p style="color: aquamarine;">Sadguru Teri Kripa<img style="height: 25px;" src="/assets/hands.png" alt=""> </p>
   <p style="color:blanchedalmond">Created by Ramanand Vishwakarma</p>
   <p>&copy; 2025 All rights reserved.</p>
@@ -246,7 +261,7 @@
           el.style.opacity = 0;
           el.style.transform = 'translateY(20px)';
           setTimeout(() => {
-            el.style.transition = 'all 0.7s ease-out';
+            el.style.transition = 'all 1.7s ease-out';
             el.style.opacity = 1;
             el.style.transform = 'translateY(0)';
           }, i * 200);
