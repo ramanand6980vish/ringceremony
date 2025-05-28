@@ -37,6 +37,8 @@
         <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
         <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="#organizers">Organizer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#host">Host</a></li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#couple" id="coupleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Couple
@@ -64,7 +66,7 @@
 </p>
 
     <!-- <strong class="line2">With the blessings of Sadguru, we joyfully announce the engagement of</strong> -->
-    <strong class="line3" style="color:crimson" >💖 Prem Sagar 💍 Rani Kumari 💖</strong>
+    <strong class="line3" style="color:crimson" >💖 𝓟𝓻𝓮𝓶 💍 𝓡𝓪𝓷𝓲   💖</strong>
     <strong class="line4">Please join us to celebrate their Ring Ceremony</strong>
     <strong class="line5">Date: 8th June 2025</strong>
   </div>
@@ -72,13 +74,13 @@
 
 <!-- Our Story Section -->
 <section id="story">
-  <h2>Our Story</h2>
-  <p style="color:rgb(0, 0, 0)">From a magical beginning to a beautiful bond, our journey has been filled with love and laughter. We are excited to start this new chapter together and would be delighted to have you join us!</p>
+  <h2>Our Story <img style="height: 20px;" src="/assets/story.png"> </h2>
+  <p style="color:rgb(0, 0, 0)">Every story has a beginning, and ours starts with a promise — a promise of shared dreams, growing together, and building a beautiful life ahead. As we step into this exciting new chapter, your presence would mean the world to us. Come celebrate the start of something truly special!</p>
 </section>
 
 <!-- Event Details Section -->
 <section id="details" class="bg-light">
-  <h2>Event Details</h2>
+  <h2>Event Details <img style="height: 20px;" src="/assets/june-8.png"> </h2>
   <ul>
     <li><strong>Date:</strong> 8th June 2025 (Sunday)</li>
     <li><strong>Time:</strong> 11:00 AM onwards</li>
@@ -86,7 +88,7 @@
      <li><strong>Venue:</strong> Bandhan Marriage Hall, Nawada More, Garhwa</li>
 <li>
   <a href="https://maps.app.goo.gl/CTBnGFYPc6v9qZez6" target="_blank" style="color: #007bff; text-decoration: underline;">
-    📍 Click   to View on Google Maps
+    <img style="height: 25px; padding-bottom: 4px;" src="/assets/google-maps.png" >  Click to View on Google Maps
   </a>
 </li>
 
@@ -138,27 +140,53 @@
 
 <!-- Organizer Section -->
 <section id="organizers" class="text-center py-5" style="background: #fff8f0;">
-  <h2 class="mb-4" style="color: #8b4513;">Event Organizers</h2>
+  <h2 class="mb-4" style="color: #8b4513;">Event Organizers <img style="height: 20px;" src="/assets/organized.png"> </h2>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-5 mb-3">
         <div class="border rounded-4 shadow-sm p-4 bg-white">
-          <h5 class="fw-bold text-danger">Nagendra Vishwakarma</h5>
+          <h5 class="fw-bold text-danger">Mr. Nagendra Vishwakarma</h5>
           <p class="mb-1 text-muted">📍 Khardiha</p>
           <p class="mb-0">📞 <a href="tel:6205708836">6205708836</a></p>
         </div>
       </div>
       <div class="col-md-5 mb-3">
         <div class="border rounded-4 shadow-sm p-4 bg-white">
-          <h5 class="fw-bold text-danger">Ashok Vishwakarma</h5>
+          <h5 class="fw-bold text-danger">Mr. Ashok Vishwakarma</h5>
           <p class="mb-1 text-muted">📍 Garhwa</p>
           <p class="mb-0">📞 <a href="tel:8252935451">8252935451</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Host -->
+<section id="host" class="text-center py-5" style="background: #fff8f0;">
+  <h2 class="mb-4" style="color: #8b4513;">Host <img style="height: 20px; padding-bottom: 2px;" src="/assets/host.png"> </h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5 mb-3">
+        <div class="border rounded-4 shadow-sm p-4 bg-white">
+          <h5 class="fw-bold text-danger">Shree Chandra Dev Vishwakarma</h5>
+          <p class="mb-1 text-muted">📍 Khardiha</p>
+          <p class="mb-0">📞 <a href="tel:6205708836">6205708836</a></p>
+        </div>
+      </div>
+      <div class="col-md-5 mb-3">
+        <div class="border rounded-4 shadow-sm p-4 bg-white">
+          <h5 class="fw-bold text-danger">Shree Ram Naresh Vishwakarma</h5>
+          <p class="mb-1 text-muted">📍 Purhe</p>
+          <p class="mb-0">📞 <a href="tel:6201665195">6201665195</a></p>
         </div>
       </div>
     </div>
     <p class="mt-4" style="color: #67326c;">For any help or enquiries, feel free to reach out to the organizers.</p>
   </div>
 </section>
+
+<!-- Host -->
 
 <!-- CountDown Timer -->
  <section id="countdown" class="text-center py-4 bg-warning text-dark">
@@ -178,7 +206,7 @@
     const secs = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("timer").innerText =
-      `${days}d ${hrs}h ${mins}m ${secs}s`;
+      `${days}days  ${hrs}hours ${mins}min ${secs}sec`;
 
     if (distance < 0) {
       document.getElementById("timer").innerText = "It's Today! 💍🎉";
